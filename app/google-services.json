@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "964282262666",
+    "project_id": "uber-clone-kotlin-51395",
+    "storage_bucket": "uber-clone-kotlin-51395.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:964282262666:android:94dda5def97ac81103b973",
+        "android_client_info": {
+          "package_name": "com.optic.uberclonekotlin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "964282262666-63kpiiavc63bj9qr7lmt6sdd8mk5pbfa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBp0UC_5UUee5k1cbqu4oPDOIssEjtrtuk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "964282262666-63kpiiavc63bj9qr7lmt6sdd8mk5pbfa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

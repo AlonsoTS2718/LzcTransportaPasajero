@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Uber Clone Kotlin</string>
+    <string name="google_maps_key">AIzaSyBNsO_PL68FV3jwJI3P60MQzVmudGf9WOU</string>
+    <string name="default_notification_channel_id">fcm_default_channel</string>
+</resources>
