@@ -15,22 +15,22 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/home_client"
+            android:src="@drawable/combi"
             android:scaleType="centerCrop"
             />
 
         <View
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/black"
-            android:alpha="0.7" />
+            android:background="@color/blue"
+            android:alpha="0.3" />
 
     </FrameLayout>
 
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="680dp"
+        android:layout_height="700dp"
         android:layout_marginLeft="40dp"
         android:layout_marginRight="40dp"
         android:layout_gravity="center"
@@ -38,7 +38,7 @@
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="700dp"
             android:background="@drawable/rounded_layout"
             android:alpha="0.3"
             />
@@ -54,14 +54,7 @@
                 android:src="@drawable/ic_person_white"
                 android:layout_marginTop="10dp" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="REGISTRO"
-                android:textColor="@color/white"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:textAlignment="center" />
+
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
@@ -188,7 +181,7 @@
                 android:text="REGISTRATE"
                 android:layout_marginTop="30dp"
                 android:background="@drawable/rounded_button"
-                app:backgroundTint="@color/white"/>
+
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -205,7 +198,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="¿Ya tienes cuenta?"
+                    android:text="Otras formas de registrarse"
                     android:textColor="@color/white"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp" />
@@ -217,16 +210,31 @@
 
             </LinearLayout>
 
+
+
             <Button
-                android:id="@+id/btnGoToLogin"
+                android:id="@+id/btnRegGoo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="30dp"
                 android:layout_marginLeft="30dp"
-                android:text="INICIAR SESION"
+                android:text="GOOGLE"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/rounded_button"
+                app:backgroundTint="@color/white"
                 />
+            <Button
+                android:id="@+id/btnRegFace"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:text="FACEBOOK"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_button"
+                app:backgroundTint="@color/white"
+                />
+
 
 
 
