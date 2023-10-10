@@ -11,6 +11,7 @@ import com.optic.uberclonekotlin.providers.AuthProvider
 
 class MainActivity : AppCompatActivity() {
 
+    //variable binding para cceder a bonotnes con id
     private lateinit var binding: ActivityMainBinding
     val authProvider = AuthProvider()
 
@@ -18,13 +19,15 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        //Con esta variable podemos llamar a todo boton que tenga id
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
 
         //Encabezado y pie transparente
         window.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS)
 
-
+        //Si se preciona boton registrarse
         binding.btnRegister.setOnClickListener { goToRegister() }
         binding.btnLogin.setOnClickListener { login() }
     }
@@ -67,6 +70,7 @@ class MainActivity : AppCompatActivity() {
         return true
     }
 
+    //Funcion ir a pantalla registrar
     private fun goToRegister() {
         val i = Intent(this, RegisterActivity::class.java)
         startActivity(i)
