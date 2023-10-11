@@ -6,14 +6,18 @@ import android.os.Bundle
 import android.util.Log
 import android.view.WindowManager
 import android.widget.Toast
+
 import com.optic.uberclonekotlin.databinding.ActivityMainBinding
 import com.optic.uberclonekotlin.providers.AuthProvider
 
 class MainActivity : AppCompatActivity() {
 
+
+
     //variable binding para cceder a bonotnes con id
     private lateinit var binding: ActivityMainBinding
     val authProvider = AuthProvider()
+
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,7 +34,10 @@ class MainActivity : AppCompatActivity() {
         //Si se preciona boton registrarse
         binding.btnRegister.setOnClickListener { goToRegister() }
         binding.btnLogin.setOnClickListener { login() }
+
+
     }
+
 
     private fun login() {
         //Varible que guarda el correo
@@ -90,5 +97,6 @@ class MainActivity : AppCompatActivity() {
             goToMap()
         }
     }
+
 
 }

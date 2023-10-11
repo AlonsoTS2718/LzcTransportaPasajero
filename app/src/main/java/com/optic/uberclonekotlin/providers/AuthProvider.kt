@@ -1,8 +1,10 @@
 package com.optic.uberclonekotlin.providers
 
+
 import com.google.android.gms.tasks.Task
 import com.google.firebase.auth.AuthResult
 import com.google.firebase.auth.FirebaseAuth
+
 
 class AuthProvider {
 
@@ -32,5 +34,12 @@ class AuthProvider {
     fun logout() {
         auth.signOut()
     }
+
+
+
+
+
+
+
 
 }
