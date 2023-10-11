@@ -13,15 +13,17 @@ import com.optic.uberclonekotlin.providers.ClientProvider
 
 class RegisterActivity : AppCompatActivity() {
 
+    //Acedder a botones mediante binding
     private lateinit var binding: ActivityRegisterBinding
     private val authProvider = AuthProvider()
     private val clientProvider = ClientProvider()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
+        //Con esta variable podemos llamar a todo boton que tenga id
         binding = ActivityRegisterBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        
         window.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS)
 
       //  binding.btnGoToLogin.setOnClickListener { goToLogin() }

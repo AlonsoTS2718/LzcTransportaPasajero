@@ -33,7 +33,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun login() {
+        //Varible que guarda el correo
         val email = binding.textFieldEmail.text.toString()
+        //Varible que guarda la contraseña
         val password = binding.textFieldPassword.text.toString()
         
         if (isValidForm(email, password)) {
