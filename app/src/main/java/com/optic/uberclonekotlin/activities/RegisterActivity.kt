@@ -24,7 +24,7 @@ class RegisterActivity : AppCompatActivity() {
         setContentView(binding.root)
         window.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS)
 
-        binding.btnGoToLogin.setOnClickListener { goToLogin() }
+      //  binding.btnGoToLogin.setOnClickListener { goToLogin() }
         binding.btnRegister.setOnClickListener { register() }
     }
     
@@ -117,9 +117,9 @@ class RegisterActivity : AppCompatActivity() {
         return true
         
     }
-    
+    /*
     private fun goToLogin() {
         val i = Intent(this, MainActivity::class.java)
         startActivity(i)
-    }
+    }*/
 }

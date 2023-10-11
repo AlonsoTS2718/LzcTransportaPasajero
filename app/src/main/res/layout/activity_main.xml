@@ -220,8 +220,6 @@
                 android:layout_marginRight="30dp"
                 android:layout_marginLeft="30dp"
                 android:text="Facebook"
-                android:drawableStart="@drawable/facebook"
-                android:drawableTint="@color/blue"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/rounded_button"
                 app:backgroundTint="@color/white"/>
