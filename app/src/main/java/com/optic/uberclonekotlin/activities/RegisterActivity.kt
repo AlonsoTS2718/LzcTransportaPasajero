@@ -23,7 +23,8 @@ class RegisterActivity : AppCompatActivity() {
         //Con esta variable podemos llamar a todo boton que tenga id
         binding = ActivityRegisterBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        
+
+        //Encabezado y pie transparentes
         window.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS)
 
       //  binding.btnGoToLogin.setOnClickListener { goToLogin() }
@@ -31,11 +32,17 @@ class RegisterActivity : AppCompatActivity() {
     }
     
     private fun register() {
+        //Variable que guarda el nombre
         val name = binding.textFieldName.text.toString()
+        //Variable que guarda el apellido
         val lastname = binding.textFieldLastname.text.toString()
+        //Variable que guarda el correo
         val email = binding.textFieldEmail.text.toString()
+        //Variable que guarda el telefono
         val phone = binding.textFieldPhone.text.toString()
+        //Variable que guarda la contraseña
         val password = binding.textFieldPassword.text.toString()
+        //variable que guarda la confirmacion de contraseña
         val confirmPassword = binding.textFieldConfirmPassword.text.toString()
         
         if (isValidForm(name, lastname, email, phone, password, confirmPassword)) {
@@ -74,6 +81,7 @@ class RegisterActivity : AppCompatActivity() {
         startActivity(i)
     }
 
+    //Funcion para retornar que no haya campos vacios: bool
     private fun isValidForm(
         name: String, 
         lastname: String, 
@@ -119,6 +127,8 @@ class RegisterActivity : AppCompatActivity() {
         return true
         
     }
+
+
     /*
     private fun goToLogin() {
         val i = Intent(this, MainActivity::class.java)
