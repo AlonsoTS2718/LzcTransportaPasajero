@@ -43,10 +43,13 @@ dependencies {
     implementation 'com.google.android.material:material:1.6.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
 
+    //Libreria klaxon
     implementation 'com.beust:klaxon:5.5'
+    //Libreria para modificar bd en firebase
     implementation platform('com.google.firebase:firebase-bom:30.1.0')
-    //Libreria para incio con google
+    //Libreria para inicio de sesion con correo en firebase
     implementation 'com.google.firebase:firebase-auth-ktx:21.0.5'
+    //Libreria para modificar bd en firebase
     implementation 'com.google.firebase:firebase-firestore-ktx'
     implementation 'com.google.firebase:firebase-storage-ktx'
     implementation 'com.google.firebase:firebase-messaging-ktx'

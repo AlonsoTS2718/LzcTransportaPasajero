@@ -15,6 +15,7 @@ import java.io.File
 
 class ClientProvider {
 
+    //Objeto para utilizar las funcionalidades de la bd
     val db = Firebase.firestore.collection("Clients")
     var storage = FirebaseStorage.getInstance().getReference().child("profile")
 
