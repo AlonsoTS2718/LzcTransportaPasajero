@@ -33,6 +33,7 @@ class MainActivity : AppCompatActivity() {
 
         //Si se preciona boton registrarse
         binding.btnRegister.setOnClickListener { goToRegister() }
+        //Si se presiona botono iniciar sesion
         binding.btnLogin.setOnClickListener { login() }
 
 
