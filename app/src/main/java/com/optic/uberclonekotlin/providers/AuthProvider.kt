@@ -7,7 +7,7 @@ import com.google.firebase.auth.FirebaseAuth
 
 
 class AuthProvider {
-
+    //objeto para autenticar usuarios
     val auth: FirebaseAuth = FirebaseAuth.getInstance()
 
     fun login(email: String, password: String): Task<AuthResult> {
